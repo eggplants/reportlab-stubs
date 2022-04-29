@@ -1,7 +1,7 @@
 # reportlab-stubs
 
 [![Release Package](
-  https://github.com/eggplants/reportlab/actions/workflows/release.yml/badge.svg
+  https://github.com/eggplants/reportlab-stubs/actions/workflows/release.yml/badge.svg
   )](
   https://github.com/eggplants/reportlab-stubs/actions/workflows/release.yml
 ) [![PyPI](
