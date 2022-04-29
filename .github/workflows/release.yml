@@ -44,15 +44,7 @@ jobs:
           password: ${{ secrets.PYPI_PASSWORD }}
           skip_existing: true
           verbose: true
-  ghcr:
-    needs: check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: docker/metadata-action@v3
-        id: meta
-        with:
-          images: ghcr.io/${{ github.repository }}
+
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
