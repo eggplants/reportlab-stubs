@@ -1,0 +1,26 @@
+from typing import Any
+
+__version__: str
+__doc__: str
+
+class Logger:
+    _fps: Any
+    _fns: Any
+    def __init__(self) -> None: ...
+    def add(self, fp) -> None: ...
+    def remove(self, fp) -> None: ...
+    def write(self, text) -> None: ...
+    def __call__(self, text) -> None: ...
+
+logger: Any
+
+class WarnOnce:
+    uttered: Any
+    pfx: Any
+    enabled: int
+    def __init__(self, kind: str = ...) -> None: ...
+    def once(self, warning) -> None: ...
+    def __call__(self, warning) -> None: ...
+
+warnOnce: Any
+infoOnce: Any
